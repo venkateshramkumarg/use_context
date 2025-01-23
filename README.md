@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Context API Implementation Example
+
+This is a Next.js project demonstrating the practical use of React's Context API for state management.
+
+## Project Overview
+
+This application showcases:
+- Implementing Context API for global state management
+- Theme switching functionality using Context
+- User authentication state management
+- Dynamic data sharing across components
 
 ## Getting Started
 
@@ -16,9 +26,21 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Implementation Details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `ThemeContext`: Manages application-wide theme settings
+- `UserContext`: Handles user authentication state
+- Custom hooks for simplified context consumption
+- Server and Client component integration with Context
+
+## Project Structure
+
+```
+/app
+  ├── context/         # Context providers
+  ├── components/      # Reusable components
+  └── page.tsx         # Main application page
+```
 
 ## Learn More
 
